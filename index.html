@@ -1,12 +1,312 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>La Piazzetta Apartment</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Piazzetta Apartment – Monolocale a Pietralunga, Umbria</title>
+<meta name="description" content="Monolocale nel centro storico di Pietralunga (PG), sulla Piazzetta dell’Orologio. Travi a vista, bagno privato, angolo cottura. Tappa del Cammino di Francesco del Nord.">
+<meta property="og:title" content="La Piazzetta Apartment – Pietralunga">
+<meta property="og:description" content="Un monolocale con travi a vista nel cuore di Pietralunga, Umbria.">
+<meta property="og:image" content="https://lapiazzettaapartment.it/img/orologio.jpg">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f4ee;--stone:#e9e2d5;--walnut:#3a2a21;--ink:#2b221d;--sage:#5d7a5a;--sage-l:#a9bda5;
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,6vw,4.4rem)}
+h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+h3{font-size:1.4rem}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(3rem,8vw,6rem) 0}
+
+header{position:sticky;top:0;z-index:10;background:rgba(247,244,238,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--stone);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.5rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font:600 1.3rem var(--serif)}
+.brand img{height:3.2rem;width:auto;mix-blend-mode:multiply}
+nav{display:flex;gap:1.4rem;font-size:.95rem}
+nav a{text-decoration:none;padding:.3rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--sage)}
+@media(max-width:720px){nav a:not(.cta){display:none}.brand span{display:none}}
+
+.hero{position:relative;min-height:min(82vh,760px);display:flex;align-items:flex-end;color:#fff;padding:0;background:#222}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,20,14,.82),rgba(30,20,14,.1) 65%)}
+.hero .wrap{position:relative;z-index:1;padding:0 0 clamp(2rem,6vw,4rem)}
+.hero h1{max-width:16ch}
+.hero p{font-size:1.2rem;max-width:44ch}
+
+.btn{display:inline-block;padding:.85rem 1.5rem;border:2px solid currentColor;text-decoration:none;font-weight:500;border-radius:2px;margin:.3rem .5rem .3rem 0;transition:background .2s,color .2s}
+.btn.fill{background:var(--sage);border-color:var(--sage);color:#fff}
+.btn:hover{background:var(--paper);color:var(--walnut);border-color:var(--paper)}
+.btn.fill:hover{background:#4a6548;color:#fff;border-color:#4a6548}
+nav .cta{background:var(--sage);color:#fff;padding:.35rem 1rem;border-radius:2px;border:0}
+
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:center}
+.split img{width:100%;aspect-ratio:4/5;object-fit:cover}
+@media(max-width:800px){.split{grid-template-columns:1fr}.split img{aspect-ratio:4/3}}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:1.2rem 0 0;padding:0;list-style:none;font-weight:500;color:var(--sage)}
+
+.band{background:var(--stone)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem 2.5rem;margin:2rem 0 0;padding:0;list-style:none}
+.features li{padding:.9rem 0;border-top:1px solid #c9bfae}
+.features strong{display:block;font:600 1.25rem var(--serif)}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.6rem;margin-top:2rem}
+.gallery button{padding:0;border:0;background:none;cursor:zoom-in;display:block}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:opacity .2s}
+.gallery button:hover img{opacity:.88}
+dialog{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}
+dialog::backdrop{background:rgba(20,14,10,.88)}
+dialog img{max-height:90vh;width:auto;margin:auto}
+dialog form{text-align:right}
+dialog button{font:inherit;background:var(--paper);border:0;padding:.4rem 1rem;cursor:pointer;margin-bottom:.4rem}
+
+.place{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.place img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
+.way{position:relative;color:#fff;margin-top:2rem}
+.way img{width:100%;height:clamp(220px,32vw,360px);object-fit:cover}
+.way div{position:absolute;inset:auto 0 0 0;padding:1.2rem 1.5rem;background:linear-gradient(to top,rgba(30,20,14,.85),transparent)}
+.way p{margin:0;font-size:1.1rem}
+@media(max-width:700px){.place{grid-template-columns:1fr}}
+
+.book{background:var(--walnut);color:var(--paper)}
+.book .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:2.5rem}
+@media(max-width:800px){.book .grid{grid-template-columns:1fr}}
+.book dl{margin:0}
+.book dt{font:600 1.2rem var(--serif);color:var(--sage-l);margin-top:1rem}
+.book dd{margin:0}
+.book .btn:hover{color:var(--walnut)}
+footer{background:#2a1e17;color:#cfc6b8;padding:2rem 0;font-size:.92rem;text-align:center}
+footer p{margin:.2rem auto;max-width:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.lang{font:inherit;font-size:.9rem;padding:.3rem .4rem;border:1px solid #c9bfae;background:var(--paper);color:var(--ink);border-radius:2px}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem}
+.rev{display:block;text-decoration:none;border:1px solid #c9bfae;padding:1.2rem 1.4rem;transition:border-color .2s}
+.rev:hover{border-color:var(--sage)}
+.rev b{display:block;font:600 2.2rem var(--serif);color:var(--sage)}
+.rev span{font-weight:500}.rev small{display:block;color:#6b5f55}
+form{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+form .full{grid-column:1/-1}
+label{display:block;font-size:.95rem;font-weight:500}
+input,textarea{width:100%;font:inherit;padding:.65rem .75rem;margin-top:.25rem;border:1px solid #8f8478;border-radius:2px;background:#fff;color:var(--ink)}
+.chk{display:flex;gap:.6rem;align-items:flex-start;font-weight:400}
+.chk input{width:auto;margin-top:.35rem}
+.hp{position:absolute;left:-9999px}
+#st{min-height:1.6em;font-weight:500}
+@media(max-width:560px){form{grid-template-columns:1fr}}
+.reqform{background:var(--paper);color:var(--ink);padding:clamp(1.2rem,3vw,2rem)}
+.reqform h2{margin-bottom:.3em}
+.reqform .btn{color:#fff}
+.reqform .btn:hover{color:#fff}
+.map{margin-top:1.5rem}
+.mapbox{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.8rem;min-height:260px;background:var(--stone);color:var(--walnut);text-align:center;padding:1rem}
+.mapbox iframe{width:100%;height:320px;border:0}
+.map small{display:block;margin-top:.5rem;color:#bdb2a3}
+</style>
 </head>
 <body>
-  <h1>La Piazzetta Apartment</h1>
-  <p>Sito in costruzione.</p>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="Logo La Piazzetta Apartment"><span>La Piazzetta Apartment</span></a>
+    <nav aria-label="Menu">
+      <a href="#monolocale" data-t="n1">Il monolocale</a>
+      <a href="#foto" data-t="n2">Foto</a>
+      <a href="#pietralunga" data-t="n3">Pietralunga</a>
+      <a class="cta" href="#prenota" data-t="n4">Prenota</a>
+      <select class="lang" id="lang" aria-label="Lingua / Language">
+        <option value="it">IT</option><option value="en">EN</option><option value="es">ES</option><option value="de">DE</option><option value="fr">FR</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/orologio.jpg" alt="La torre dell’orologio sulla Piazzetta di Pietralunga al tramonto">
+  <div class="wrap">
+    <h1 data-t="h1">Un monolocale sulla Piazzetta dell’Orologio</h1>
+    <p data-t="hp">Travi a vista, pietra e vicoli silenziosi nel centro storico di Pietralunga, in Umbria.</p>
+    <a class="btn fill" href="#prenota" data-t="b1">Prenota il tuo soggiorno</a>
+    <a class="btn" href="#foto" data-t="b2">Guarda le foto</a>
+  </div>
+</section>
+
+<section id="monolocale">
+  <div class="wrap split">
+    <div>
+      <h2 data-t="t1">Il monolocale</h2>
+      <p data-t="p1">Siamo nel primo vicolo che parte dalla Piazzetta dell’Orologio, a pochi passi dalla piazza principale, dai negozi e dai ristoranti del paese.</p>
+      <p data-t="p2">Dentro trovi soffitto con travi in legno, bagno privato con doccia, angolo cottura attrezzato e due letti singoli unibili in matrimoniale. Adatto a coppie, amici, viaggiatori singoli e pellegrini.</p>
+      <ul class="facts"><li data-t="f1">2 ospiti</li><li data-t="f2">1 bagno privato</li></ul>
+    </div>
+    <img src="img/monolocale.jpg" alt="Interno del monolocale con travi in legno a vista e angolo cottura" loading="lazy">
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2 data-t="t2">Cosa trovi</h2>
+    <ul class="features">
+      <li data-t="c1"><strong>Due letti singoli</strong>Unibili in matrimoniale, con biancheria e asciugamani.</li>
+      <li data-t="c2"><strong>Angolo cottura</strong>Piano a induzione, bollitore, macchina da caffè e frigorifero.</li>
+      <li data-t="c3"><strong>Bagno privato</strong>Doccia, bidet e asciugacapelli.</li>
+      <li data-t="c4"><strong>Wifi e TV</strong>Per organizzare il viaggio o rilassarti la sera.</li>
+      <li data-t="c5"><strong>Animali ammessi</strong>Puoi viaggiare con il tuo amico a quattro zampe.</li>
+      <li data-t="c6"><strong>Posizione</strong>Nel centro storico, a piedi da piazza, negozi e servizi.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="foto">
+  <div class="wrap">
+    <h2 data-t="t3">Foto</h2>
+    <p data-t="p3">Clicca su una foto per ingrandirla.</p>
+    <div class="gallery">
+      <button type="button"><img src="img/living.jpg" alt="Zona giorno con bancone e travi" loading="lazy"></button>
+      <button type="button"><img src="img/letti.jpg" alt="Due letti singoli con testiera in legno" loading="lazy"></button>
+      <button type="button"><img src="img/testiera.jpg" alt="Testiera in listelli di legno con luce a led" loading="lazy"></button>
+      <button type="button"><img src="img/cucina2.jpg" alt="Angolo cottura" loading="lazy"></button>
+      <button type="button"><img src="img/camera.jpg" alt="Letto singolo e armadio antico" loading="lazy"></button>
+      <button type="button"><img src="img/bagno2.jpg" alt="Bagno con doccia" loading="lazy"></button>
+      <button type="button"><img src="img/tavolo2.jpg" alt="Tavolo alto con due sgabelli" loading="lazy"></button>
+      <button type="button"><img src="img/dettaglio.jpg" alt="Cestino in fibra naturale con asciugamano" loading="lazy"></button>
+      <button type="button"><img src="img/piazzetta.jpg" alt="Piazzetta dell’Orologio con il pozzo" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<section id="pietralunga" class="band">
+  <div class="wrap">
+    <h2 data-t="t4">Pietralunga, Alta Umbria</h2>
+    <p data-t="p4">Un borgo di pietra tra le colline e l’Appennino, in provincia di Perugia. Qui si cammina nei boschi, si visita la Rocca Longobarda e, in stagione, si mangia il tartufo bianco.</p>
+    <div class="place">
+      <img src="img/borgo.jpg" alt="Veduta aerea del borgo di Pietralunga" loading="lazy">
+      <img src="img/rocca.jpg" alt="La rocca longobarda e la piazza" loading="lazy">
+      <img src="img/tartufo.jpg" alt="Tagliatelle con tartufo bianco" loading="lazy">
+    </div>
+    <div class="way">
+      <img src="img/cammino.jpg" alt="Escursionisti su un sentiero tra i prati" loading="lazy">
+      <div><p data-t="p5">Siamo una tappa del Cammino di Francesco del Nord: la quinta, da Città di Castello a Pietralunga.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="recensioni">
+  <div class="wrap">
+    <h2 data-t="t6">Cosa dicono gli ospiti</h2>
+    <div class="revs">
+      <a class="rev" href="https://www.airbnb.it/rooms/1549179329776174634" target="_blank" rel="noopener"><b>4,95</b><span>Airbnb</span><small data-t="r1">su 5 · 19 recensioni</small></a>
+      <a class="rev" href="https://www.booking.com/hotel/it/la-piazzetta-apartment-pietralunga.it.html" target="_blank" rel="noopener"><b data-t="r5">Eccellente</b><span>Booking.com</span><small data-t="r6">69 recensioni</small></a>
+      <a class="rev" href="https://share.google/w3KCyPwQEsxqPNU3P" target="_blank" rel="noopener"><b>4,7</b><span>Google</span><small data-t="r4">su 5 · 3 recensioni</small></a>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="book">
+  <div class="wrap grid">
+    <div class="reqform">
+      <h2 data-t="t5">Richiedi la prenotazione</h2>
+      <p data-t="p6">Compila il modulo: ti rispondiamo via email. Tutti i campi con * sono obbligatori.</p>
+      <form id="rf" action="https://formspree.io/f/FORM_ID" method="POST">
+        <label>Nome *<input name="nome" required autocomplete="given-name"></label>
+        <label>Cognome *<input name="cognome" required autocomplete="family-name"></label>
+        <label>Cellulare *<input name="cellulare" type="tel" required autocomplete="tel" pattern="[0-9+ ()./-]{7,20}"></label>
+        <label>Email *<input name="email" type="email" required autocomplete="email"></label>
+        <label>Arrivo *<input name="arrivo" type="date" required></label>
+        <label>Partenza *<input name="partenza" type="date" required></label>
+        <label class="full">Ospiti *<input name="ospiti" type="number" min="1" max="2" value="2" required></label>
+        <label class="full">Messaggio<textarea name="messaggio" rows="3"></textarea></label>
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="chk full"><input type="checkbox" name="privacy" required><span data-t="l9">Ho letto l’<a href="privacy.html" target="_blank">informativa privacy</a> e acconsento al trattamento dei miei dati per rispondere alla richiesta. *</span></label>
+        <div class="full"><button class="btn fill" type="submit" data-t="s1">Invia la richiesta</button><div id="st" role="status"></div></div>
+      </form>
+    </div>
+    <div>
+      <p data-t="o1">Preferisci prenotare subito? Controlla date e prezzo qui:</p>
+      <a class="btn fill" href="https://www.airbnb.it/rooms/1549179329776174634" target="_blank" rel="noopener">Airbnb</a>
+      <a class="btn" href="https://www.booking.com/hotel/it/la-piazzetta-apartment-pietralunga.it.html" target="_blank" rel="noopener">Booking.com</a>
+      <dl>
+        <dt data-t="d1">Dove siamo</dt>
+        <dd>Corso Giacomo Matteotti 16<br>06026 Pietralunga (PG)</dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:host@lapiazzettaapartment.it">host@lapiazzettaapartment.it</a></dd>
+        <dt data-t="d2">Telefono</dt>
+        <dd><a href="tel:+393460393738">+39 346 039 3738</a></dd>
+        <dt>Instagram</dt>
+        <dd><a href="https://www.instagram.com/lapiazzettaapartment/" target="_blank" rel="noopener">@lapiazzettaapartment</a></dd>
+        <dt>CIN</dt>
+        <dd>IT054041C2CI036206</dd>
+      </dl>
+      <div class="map">
+        <div class="mapbox" id="mb">
+          <a class="btn" href="https://maps.app.goo.gl/FYSTAHXiri3bfEuB9" target="_blank" rel="noopener" data-t="m1">Apri in Google Maps</a>
+          <button class="btn" type="button" id="lm" data-t="m2">Mostra la mappa qui</button>
+        </div>
+        <small data-t="m3">Mostrando la mappa, i dati di navigazione vengono trattati anche da Google.</small>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>La Piazzetta Apartment · Pietralunga (PG), Umbria · CIN IT054041C2CI036206</p>
+    <p><a href="https://www.instagram.com/lapiazzettaapartment/" target="_blank" rel="noopener">Instagram</a> · <a href="privacy.html" data-t="pv">Informativa privacy</a></p>
+  </div>
+</footer>
+
+<dialog id="zoom"><form method="dialog"><button>×</button></form><img alt=""></dialog>
+<script>
+(function(){
+var L={
+en:{n1:"The apartment",n2:"Photos",n3:"Pietralunga",n4:"Book",h1:"A studio on Piazzetta dell’Orologio",hp:"Exposed beams, stone and quiet lanes in the historic centre of Pietralunga, Umbria.",b1:"Book your stay",b2:"See the photos",t1:"The apartment",p1:"We are in the first lane off Piazzetta dell’Orologio, a few steps from the main square, shops and restaurants.",p2:"Inside: a wooden-beamed ceiling, private bathroom with shower, a fitted kitchenette and two single beds that join into a double. Ideal for couples, friends, solo travellers and pilgrims.",f1:"2 guests",f2:"1 private bathroom",t2:"What you get",c1:"<strong>Two single beds</strong>Joinable into a double, with linen and towels.",c2:"<strong>Kitchenette</strong>Induction hob, kettle, coffee machine and fridge.",c3:"<strong>Private bathroom</strong>Shower, bidet and hairdryer.",c4:"<strong>Wifi and TV</strong>To plan your trip or unwind in the evening.",c5:"<strong>Pets welcome</strong>Bring your four-legged friend.",c6:"<strong>Location</strong>In the old town, on foot to the square, shops and services.",t3:"Photos",p3:"Click a photo to enlarge it.",t4:"Pietralunga, Upper Umbria",p4:"A stone village between the hills and the Apennines, in the province of Perugia. Walk the woods, visit the Lombard fortress and, in season, taste the white truffle.",p5:"We are a stop on the Via di Francesco (northern route): stage 5, Città di Castello to Pietralunga.",t6:"What our guests say",r1:"out of 5 · 19 reviews",r2:"Read the reviews",r5:"Excellent",r6:"69 reviews",r4:"out of 5 · 3 reviews",d2:"Phone",t5:"Request a booking",p6:"Fill in the form and we will reply by email. Fields marked * are required.",l9:"I have read the <a href=\"privacy.html\" target=\"_blank\">privacy notice</a> and consent to my data being processed to answer my request. *",s1:"Send request",o1:"Prefer to book now? Check dates and price here:",d1:"Where we are",m1:"Open in Google Maps",m2:"Show the map here",m3:"Showing the map means Google also processes your browsing data.",pv:"Privacy notice",F:["First name *","Last name *","Mobile *","Email *","Arrival *","Departure *","Guests *","Message"],ok:"Request sent. We will reply soon.",ko:"Could not send. Please write to host@lapiazzettaapartment.it"},
+es:{n1:"El apartamento",n2:"Fotos",n3:"Pietralunga",n4:"Reservar",h1:"Un estudio en la Piazzetta dell’Orologio",hp:"Vigas vistas, piedra y calles tranquilas en el casco antiguo de Pietralunga, Umbría.",b1:"Reserva tu estancia",b2:"Ver las fotos",t1:"El apartamento",p1:"Estamos en la primera calle de la Piazzetta dell’Orologio, a pocos pasos de la plaza principal, las tiendas y los restaurantes.",p2:"Dentro: techo con vigas de madera, baño privado con ducha, cocina equipada y dos camas individuales que se unen en una de matrimonio. Ideal para parejas, amigos, viajeros solos y peregrinos.",f1:"2 huéspedes",f2:"1 baño privado",t2:"Qué encontrarás",c1:"<strong>Dos camas individuales</strong>Unibles en matrimonio, con ropa de cama y toallas.",c2:"<strong>Cocina</strong>Placa de inducción, hervidor, cafetera y nevera.",c3:"<strong>Baño privado</strong>Ducha, bidé y secador.",c4:"<strong>Wifi y TV</strong>Para organizar el viaje o relajarte por la noche.",c5:"<strong>Se admiten mascotas</strong>Puedes viajar con tu mejor amigo.",c6:"<strong>Ubicación</strong>En el centro histórico, a pie de la plaza, tiendas y servicios.",t3:"Fotos",p3:"Haz clic en una foto para ampliarla.",t4:"Pietralunga, Alta Umbría",p4:"Un pueblo de piedra entre colinas y Apeninos, en la provincia de Perugia. Se camina por los bosques, se visita la fortaleza lombarda y, en temporada, se come trufa blanca.",p5:"Somos una etapa del Camino de Francisco del Norte: la quinta, de Città di Castello a Pietralunga.",t6:"Lo que dicen los huéspedes",r1:"de 5 · 19 opiniones",r2:"Leer las opiniones",r5:"Excelente",r6:"69 opiniones",r4:"de 5 · 3 opiniones",d2:"Teléfono",t5:"Solicita tu reserva",p6:"Rellena el formulario y te responderemos por email. Los campos con * son obligatorios.",l9:"He leído la <a href=\"privacy.html\" target=\"_blank\">política de privacidad</a> y acepto el tratamiento de mis datos para responder a mi solicitud. *",s1:"Enviar solicitud",o1:"¿Prefieres reservar ya? Consulta fechas y precio aquí:",d1:"Dónde estamos",m1:"Abrir en Google Maps",m2:"Mostrar el mapa aquí",m3:"Al mostrar el mapa, Google también trata tus datos de navegación.",pv:"Política de privacidad",F:["Nombre *","Apellidos *","Móvil *","Email *","Llegada *","Salida *","Huéspedes *","Mensaje"],ok:"Solicitud enviada. Te responderemos pronto.",ko:"No se pudo enviar. Escribe a host@lapiazzettaapartment.it"},
+de:{n1:"Die Unterkunft",n2:"Fotos",n3:"Pietralunga",n4:"Buchen",h1:"Ein Apartment an der Piazzetta dell’Orologio",hp:"Sichtbare Balken, Stein und ruhige Gassen in der Altstadt von Pietralunga, Umbrien.",b1:"Aufenthalt buchen",b2:"Fotos ansehen",t1:"Die Unterkunft",p1:"Wir liegen in der ersten Gasse an der Piazzetta dell’Orologio, nur wenige Schritte vom Hauptplatz, von Geschäften und Restaurants entfernt.",p2:"Innen: Holzbalkendecke, eigenes Bad mit Dusche, ausgestattete Küchenzeile und zwei Einzelbetten, die sich zum Doppelbett verbinden lassen. Ideal für Paare, Freunde, Alleinreisende und Pilger.",f1:"2 Gäste",f2:"1 eigenes Bad",t2:"Ausstattung",c1:"<strong>Zwei Einzelbetten</strong>Zum Doppelbett verbindbar, mit Bettwäsche und Handtüchern.",c2:"<strong>Küchenzeile</strong>Induktionsplatte, Wasserkocher, Kaffeemaschine und Kühlschrank.",c3:"<strong>Eigenes Bad</strong>Dusche, Bidet und Haartrockner.",c4:"<strong>WLAN und TV</strong>Zum Planen der Reise oder zum Entspannen am Abend.",c5:"<strong>Haustiere erlaubt</strong>Du kannst deinen Vierbeiner mitbringen.",c6:"<strong>Lage</strong>In der Altstadt, zu Fuß zu Platz, Geschäften und Services.",t3:"Fotos",p3:"Klicke auf ein Foto, um es zu vergrößern.",t4:"Pietralunga, Oberumbrien",p4:"Ein Steindorf zwischen Hügeln und Apennin in der Provinz Perugia. Man wandert durch die Wälder, besucht die langobardische Burg und isst in der Saison weißen Trüffel.",p5:"Wir sind eine Etappe des nördlichen Franziskusweges: die fünfte, von Città di Castello nach Pietralunga.",t6:"Das sagen unsere Gäste",r1:"von 5 · 19 Bewertungen",r2:"Bewertungen lesen",r5:"Hervorragend",r6:"69 Bewertungen",r4:"von 5 · 3 Bewertungen",d2:"Telefon",t5:"Buchung anfragen",p6:"Formular ausfüllen, wir antworten per E-Mail. Mit * markierte Felder sind Pflichtfelder.",l9:"Ich habe die <a href=\"privacy.html\" target=\"_blank\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Beantwortung meiner Anfrage zu. *",s1:"Anfrage senden",o1:"Lieber gleich buchen? Daten und Preis hier prüfen:",d1:"So finden Sie uns",m1:"In Google Maps öffnen",m2:"Karte hier anzeigen",m3:"Beim Anzeigen der Karte verarbeitet auch Google Ihre Browserdaten.",pv:"Datenschutzerklärung",F:["Vorname *","Nachname *","Handy *","E-Mail *","Anreise *","Abreise *","Gäste *","Nachricht"],ok:"Anfrage gesendet. Wir antworten bald.",ko:"Senden fehlgeschlagen. Bitte schreiben Sie an host@lapiazzettaapartment.it"},
+fr:{n1:"Le logement",n2:"Photos",n3:"Pietralunga",n4:"Réserver",h1:"Un studio sur la Piazzetta dell’Orologio",hp:"Poutres apparentes, pierre et ruelles calmes dans le centre historique de Pietralunga, en Ombrie.",b1:"Réservez votre séjour",b2:"Voir les photos",t1:"Le logement",p1:"Nous sommes dans la première ruelle de la Piazzetta dell’Orologio, à quelques pas de la place principale, des commerces et des restaurants.",p2:"À l’intérieur : plafond à poutres en bois, salle de bain privée avec douche, coin cuisine équipé et deux lits simples réunissables en lit double. Idéal pour couples, amis, voyageurs seuls et pèlerins.",f1:"2 personnes",f2:"1 salle de bain privée",t2:"Ce que vous trouvez",c1:"<strong>Deux lits simples</strong>Réunissables en lit double, avec linge et serviettes.",c2:"<strong>Coin cuisine</strong>Plaque à induction, bouilloire, cafetière et réfrigérateur.",c3:"<strong>Salle de bain privée</strong>Douche, bidet et sèche-cheveux.",c4:"<strong>Wifi et TV</strong>Pour préparer le voyage ou vous détendre le soir.",c5:"<strong>Animaux acceptés</strong>Voyagez avec votre compagnon à quatre pattes.",c6:"<strong>Emplacement</strong>Dans le centre historique, à pied de la place, des commerces et des services.",t3:"Photos",p3:"Cliquez sur une photo pour l’agrandir.",t4:"Pietralunga, Haute Ombrie",p4:"Un village de pierre entre collines et Apennins, dans la province de Pérouse. On marche dans les bois, on visite la forteresse lombarde et, en saison, on déguste la truffe blanche.",p5:"Nous sommes une étape de la Via di Francesco (nord) : la cinquième, de Città di Castello à Pietralunga.",t6:"Ce que disent nos hôtes",r1:"sur 5 · 19 avis",r2:"Lire les avis",r5:"Excellent",r6:"69 avis",r4:"sur 5 · 3 avis",d2:"Téléphone",t5:"Demander une réservation",p6:"Remplissez le formulaire, nous répondons par email. Les champs marqués * sont obligatoires.",l9:"J’ai lu la <a href=\"privacy.html\" target=\"_blank\">politique de confidentialité</a> et j’accepte le traitement de mes données pour répondre à ma demande. *",s1:"Envoyer la demande",o1:"Vous préférez réserver tout de suite ? Vérifiez dates et prix ici :",d1:"Où nous trouver",m1:"Ouvrir dans Google Maps",m2:"Afficher la carte ici",m3:"En affichant la carte, Google traite aussi vos données de navigation.",pv:"Politique de confidentialité",F:["Prénom *","Nom *","Mobile *","Email *","Arrivée *","Départ *","Voyageurs *","Message"],ok:"Demande envoyée. Nous vous répondrons bientôt.",ko:"Envoi impossible. Écrivez à host@lapiazzettaapartment.it"}};
+var D={},el=document.querySelectorAll('[data-t]'),lb=document.querySelectorAll('#rf label:not(.chk)');
+el.forEach(function(e){D[e.dataset.t]=e.innerHTML});
+var LB=[];lb.forEach(function(l){var i=l.querySelector('input,textarea');LB.push(l.firstChild.textContent)});
+var cur='it';
+function tr(k){return (L[cur]&&L[cur][k])||D[k]||''}
+function set(l){cur=l;document.documentElement.lang=l;
+ el.forEach(function(e){e.innerHTML=tr(e.dataset.t)});
+ lb.forEach(function(x,i){x.firstChild.textContent=(L[l]&&L[l].F)?L[l].F[i]:LB[i]});
+ try{localStorage.setItem('lang',l)}catch(e){}}
+var sel=document.getElementById('lang'),sv='';
+try{sv=localStorage.getItem('lang')||''}catch(e){}
+if(!sv){var n=(navigator.language||'it').slice(0,2);sv=L[n]?n:'it'}
+sel.value=sv;if(sv!=='it')set(sv);
+sel.addEventListener('change',function(){set(sel.value)});
+
+var d=document.getElementById('zoom'),im=d.querySelector('img');
+document.querySelectorAll('.gallery button').forEach(function(b){b.addEventListener('click',function(){var s=b.querySelector('img');im.src=s.src;im.alt=s.alt;d.showModal()})});
+d.addEventListener('click',function(e){if(e.target===d)d.close()});
+
+document.getElementById('lm').addEventListener('click',function(){
+ document.getElementById('mb').innerHTML='<iframe title="Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Corso+Giacomo+Matteotti+16,+06026+Pietralunga+PG&amp;output=embed"></iframe>'});
+
+var f=document.getElementById('rf'),st=document.getElementById('st');
+f.addEventListener('submit',function(e){e.preventDefault();
+ if(f.elements.arrivo.value&&f.elements.partenza.value<=f.elements.arrivo.value){f.elements.partenza.setCustomValidity('!');f.elements.partenza.reportValidity();f.elements.partenza.setCustomValidity('');return}
+ var fd=new FormData(f);
+ if(f.action.indexOf('FORM_ID')>-1){
+  var b=['nome','cognome','cellulare','email','arrivo','partenza','ospiti','messaggio'].map(function(k){return k+': '+fd.get(k)}).join('\n');
+  location.href='mailto:host@lapiazzettaapartment.it?subject='+encodeURIComponent('Richiesta prenotazione')+'&body='+encodeURIComponent(b);return}
+ fetch(f.action,{method:'POST',body:fd,headers:{Accept:'application/json'}}).then(function(r){if(r.ok){st.textContent=tr('ok')||'Richiesta inviata. Ti risponderemo presto.';f.reset()}else{throw 0}}).catch(function(){st.textContent=tr('ko')||'Invio non riuscito. Scrivici a host@lapiazzettaapartment.it'})});
+})();
+</script>
 </body>
 </html>
