@@ -455,18 +455,18 @@ textarea{resize:vertical}
 .rt-head{display:flex;align-items:center;gap:.6rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-l);margin-bottom:.4rem}
 .rt{display:grid;grid-template-columns:minmax(7rem,9.5rem) 1fr auto;align-items:center;gap:1rem;padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .town{font:500 1.35rem/1.1 var(--serif)}
-.ln{height:2px;background:rgba(255,255,255,.1);position:relative;border-radius:2px}
-.ln i{position:absolute;left:0;top:0;height:100%;width:var(--w);background:linear-gradient(90deg,rgba(169,189,165,.25),var(--sage-l));border-radius:2px;transform-origin:0 50%;transform:scaleX(0);transition:transform 1.8s var(--ease)}
-.ln i::after{content:"";position:absolute;right:-5px;top:-4px;width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(169,189,165,.6);animation:ping 2.4s 1.8s infinite}
+.rl{height:2px;background:rgba(255,255,255,.1);position:relative;border-radius:2px}
+.rl i{position:absolute;left:0;top:0;height:100%;width:var(--w);background:linear-gradient(90deg,rgba(169,189,165,.25),var(--sage-l));border-radius:2px;transform-origin:0 50%;transform:scaleX(0);transition:transform 1.8s var(--ease)}
+.rl i::after{content:"";position:absolute;right:-5px;top:-4px;width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(169,189,165,.6);animation:ping 2.4s 1.8s infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(169,189,165,.6)}100%{box-shadow:0 0 0 12px rgba(169,189,165,0)}}
-.walk .ln i{background:repeating-linear-gradient(90deg,#e3b89f 0 7px,transparent 7px 13px)}
-.walk .ln i::after{background:#e3b89f}
-.reach.in .ln i{transform:scaleX(1)}
-.routes li:nth-child(2) .ln i{transition-delay:.15s}.routes li:nth-child(3) .ln i{transition-delay:.3s}.routes li:nth-child(4) .ln i{transition-delay:.45s}.walk .ln i{transition-delay:.7s}
+.walk .rl i{background:repeating-linear-gradient(90deg,#e3b89f 0 7px,transparent 7px 13px)}
+.walk .rl i::after{background:#e3b89f}
+.reach.in .rl i{transform:scaleX(1)}
+.routes li:nth-child(2) .rl i{transition-delay:.15s}.routes li:nth-child(3) .rl i{transition-delay:.3s}.routes li:nth-child(4) .rl i{transition-delay:.45s}.walk .rl i{transition-delay:.7s}
 .tm{font:600 1.15rem var(--serif);padding:.25rem .85rem;border-radius:99px;background:rgba(255,255,255,.09);white-space:nowrap}
 .walk .tm{font:500 .85rem var(--sans);color:#f0d6c6}
 @media(max-width:860px){.reach{grid-template-columns:1fr}}
-@media(max-width:480px){.rt{grid-template-columns:1fr auto;gap:.4rem .8rem}.rt .ln{grid-column:1/-1;grid-row:2}.town{font-size:1.2rem}}
+@media(max-width:480px){.rt{grid-template-columns:1fr auto;gap:.4rem .8rem}.rt .rl{grid-column:1/-1;grid-row:2}.town{font-size:1.2rem}}
 .map{position:relative;margin-top:2rem;border-radius:8px;overflow:hidden;height:clamp(320px,45vw,460px);background:var(--stone)}
 .map iframe{width:100%;height:100%;border:0;filter:grayscale(.35) sepia(.15) contrast(1.02);transition:filter .6s}
 .map:hover iframe{filter:none}
@@ -727,9 +727,9 @@ footer a:hover{border-color:#fff}
       </div>
       <div class="routes">
         <div class="rt-head"><svg viewBox="0 0 24 24"><path d="M5 16l1.5-5.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 16M4 16h16v3H4zM7 19v2M17 19v2"/></svg><span data-t="g5">In auto, da</span></div>
-        <ul><li class="rt"><span class="town">Gubbio</span><span class="ln"><i style="--w:44%"></i></span><span class="tm">25 min</span></li><li class="rt"><span class="town">Umbertide</span><span class="ln"><i style="--w:44%"></i></span><span class="tm">25 min</span></li><li class="rt"><span class="town">Città di Castello</span><span class="ln"><i style="--w:54%"></i></span><span class="tm">30 min</span></li><li class="rt"><span class="town">Perugia</span><span class="ln"><i style="--w:96%"></i></span><span class="tm"><span data-t="g3">meno di 1 ora</span></span></li></ul>
+        <ul><li class="rt"><span class="town">Gubbio</span><span class="rl"><i style="--w:44%"></i></span><span class="tm">25 min</span></li><li class="rt"><span class="town">Umbertide</span><span class="rl"><i style="--w:44%"></i></span><span class="tm">25 min</span></li><li class="rt"><span class="town">Città di Castello</span><span class="rl"><i style="--w:54%"></i></span><span class="tm">30 min</span></li><li class="rt"><span class="town">Perugia</span><span class="rl"><i style="--w:96%"></i></span><span class="tm"><span data-t="g3">meno di 1 ora</span></span></li></ul>
         <div class="rt-head"><svg viewBox="0 0 24 24"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2-6-2.5-2.5 1-4.5 3 2.5 3 1M9.5 8.5L7 11M12 15l2.5 6"/></svg><span data-t="g6">A piedi, da</span></div>
-        <ul><li class="rt walk"><span class="town">Città di Castello</span><span class="ln"><i style="--w:100%"></i></span><span class="tm" data-t="g4">Tappa 5 del Cammino</span></li></ul>
+        <ul><li class="rt walk"><span class="town">Città di Castello</span><span class="rl"><i style="--w:100%"></i></span><span class="tm" data-t="g4">Tappa 5 del Cammino</span></li></ul>
       </div>
     </div>
     <div class="map rv">
